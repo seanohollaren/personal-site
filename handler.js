@@ -2,8 +2,10 @@
 
 const html = require('./site').html;
 
-module.exports.hello = (event, context, callback) => {
-  
+module.exports.hello = async (event) => {
+  // you can grab things like queryParams, pathParams, etc off the `event` object
+
+  // return static html
   const response = {
     statusCode: 200,
     headers: {
@@ -12,5 +14,5 @@ module.exports.hello = (event, context, callback) => {
     body: html,
   };
 
-  callback(null, response);
+  return response;
 };

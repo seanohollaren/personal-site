@@ -2,8 +2,8 @@ service: personal-site
 
 provider:
   name: aws
-  region: us-east-1
-  runtime: nodejs8.10
+  region: us-west-2
+  runtime: nodejs12.x
 
 functions:
   hello:
@@ -13,8 +13,3 @@ functions:
       - http:
           path: /
           method: get
-  warm:
-    handler: handler.warm
-    memorySize: 128
-    events:
-      - schedule: rate(10 minutes)

@@ -1,0 +1,25 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "A little lambda that serves a bit of static html.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanohollaren/personal-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanohollaren/personal-site/issues"
+  },
+  "homepage": "https://github.com/seanohollaren/personal-site#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.648.0"
+  },
+  "dependencies": {
+    "serverless": "^1.67.0"
+  }
+}
